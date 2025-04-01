@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading">
+        <h2>DEATH PREDICTOR</h2>
+    </div>
+    <form id="form" method="post" action="DeathPredictorServlet">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" maxlength="3" id="age" name="age" required><br><br>
+
+        <fieldset>
+            <legend>Select your favorite foods (1-5):</legend>
+            <label><input type="checkbox" name="food" value="Noodles" data-energy="10" data-toxicity="90"> Noodles</label><br>
+            <label><input type="checkbox" name="food" value="Biryani" data-energy="40" data-toxicity="60"> Biryani</label><br>
+            <label><input type="checkbox" name="food" value="Idly" data-energy="95" data-toxicity="5"> Idly</label><br>
+            <label><input type="checkbox" name="food" value="Idiyappam" data-energy="95" data-toxicity="5"> Idiyappam</label><br>
+            <label><input type="checkbox" name="food" value="Chicken Fried Rice" data-energy="50" data-toxicity="50"> Chicken Fried Rice</label><br>
+            <label><input type="checkbox" name="food" value="Veg Fried Rice" data-energy="65" data-toxicity="35"> Veg Fried Rice</label><br>
+            <label><input type="checkbox" name="food" value="White Rice" data-energy="90" data-toxicity="10"> White Rice</label><br>
+            <label><input type="checkbox" name="food" value="Fish" data-energy="70" data-toxicity="30"> Fish</label><br>
+            <label><input type="checkbox" name="food" value="Fruits" data-energy="97" data-toxicity="3"> Fruits</label><br>
+            <label><input type="checkbox" name="food" value="Veg Biryani" data-energy="80" data-toxicity="20"> Veg Biryani</label><br>
+        </fieldset><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
